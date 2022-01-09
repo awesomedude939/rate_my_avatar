@@ -1,7 +1,12 @@
-function gifexe(img,fps,name)
+function gifexe(img,fps,name,loop,loopG)
+    if loop then 
+    while loopG do 
+    wait()
     if type(img) ~= "table" then warn("gifexe | Expected table, got",type(img)) error() end
     for i,c in pairs(img) do 
         game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = name,["ImageId"] = c } )
         wait(fps)
+    end
+    end
     end
 end
