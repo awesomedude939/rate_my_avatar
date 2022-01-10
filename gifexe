@@ -4,7 +4,6 @@ function gifexe(img,fps,name,loop,loopG,txtexe)
 	if type(img) ~= "table" then warn("gifexe | Expected table, got",type(img)) error() end
 	if loop then 
 		while loopG do 
-			wait()
 			if txtexe then 
 				for i,c in pairs(img) do 
 					getgenv().CurrentImageGifExe = c
