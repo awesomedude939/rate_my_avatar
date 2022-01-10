@@ -1,5 +1,4 @@
 getgenv().CurrentTextTxtExe
-getgenv().TextAmountTxtExe
 
 function txtexe(text,fps,img,loop,loopG,gifexe)
         getgenv().TextAmountTxtExe = #text
