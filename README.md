@@ -12,5 +12,7 @@ spawn(function()
 txtexe({"photoo","phototw","phototh","photofo","photofi","photosi","photose","photoe","photon"},0.06,0,true,true,true)
 end)
 
-# gifexe(images {table}, fps {number}, text {string}, loop {bool}, while loop arguments {bool}, txtexe {bool} )
-# txtexe(texts {table}, fps {number}, image {number}, loop {bool}, while loop arguments {bool}, gifexe {bool} )
+
+gifexe(images {table}, fps {number}, text {string}, loop {bool}, while loop arguments {bool}, txtexe {bool} )
+
+txtexe(texts {table}, fps {number}, image {number}, loop {bool}, while loop arguments {bool}, gifexe {bool} )
