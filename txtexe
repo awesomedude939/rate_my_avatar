@@ -22,15 +22,18 @@ function txtexe(text,fps,img,loop,loopG,gifexe)
 			end
 		end
 	else 
-		for i,c in pairs(text) do 
-			if gifexe then 
-				getgenv().CurrentTextTxtExe = c
-				game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = c,["ImageId"] = getgenv().CurrentImageGifExe } )
+		if gifexe then 
+				for i,c in pairs(text) do 
+					getgenv().CurrentTextTxtExe = c
+					game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = c,["ImageId"] = getgenv().CurrentImageGifExe } )
+					wait(fps)
+				end
 			else 
-				getgenv().CurrentTextTxtExe = c
-				game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = c,["ImageId"] = img } )
+				for i,c in pairs(text) do 
+					getgenv().CurrentTextTxtExe = c
+					game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = c,["ImageId"] = img } )
+					wait(fps)
+				end
 			end
-			wait(fps)
-		end
 	end
 end
