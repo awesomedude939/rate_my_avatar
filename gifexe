@@ -1,12 +1,40 @@
-function gifexe(img,fps,name,loop,loopG)
-    if loop then 
-    while loopG do 
-    wait()
-    if type(img) ~= "table" then warn("gifexe | Expected table, got",type(img)) error() end
-    for i,c in pairs(img) do 
-        game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = name,["ImageId"] = c } )
-        wait(fps)
-    end
-    end
-    end
+getgenv().CurrentImageGifExe = 0
+
+function gifexe(img,fps,name,loop,loopG,txtexe)
+	if loop then 
+		if type(img) ~= "table" then warn("gifexe | Expected table, got",type(img)) error() end
+		while loopG do 
+			wait()
+			if txtexe then 
+				for i,c in pairs(img) do 
+					getgenv().CurrentImageGifExe = c
+					game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = name,["ImageId"] = getgenv().CurrentTextTxtExe } )
+					wait(fps)
+				end
+
+			else
+				for i,c in pairs(img) do 
+					getgenv().CurrentImageGifExe = c
+					game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = name,["ImageId"] = c } )
+					wait(fps)
+				end
+			end
+		end
+
+	else
+		if txtexe then 
+			for i,c in pairs(img) do 
+				getgenv().CurrentImageGifExe = c
+				game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = name,["ImageId"] = getgenv().CurrentTextTxtExe } )
+				wait(fps)
+			end
+
+		else
+			for i,c in pairs(img) do 
+				getgenv().CurrentImageGifExe = c
+				game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = name,["ImageId"] = c } )
+				wait(fps)
+			end
+		end
+	end
 end
