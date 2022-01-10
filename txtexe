@@ -4,7 +4,6 @@ function txtexe(text,fps,img,loop,loopG,gifexe)
 	if type(text) ~= "table" then warn("txtexe | Expected table, got",type(text)) error() end
 	if loop then 
 		while loopG do 
-			wait()
 			if gifexe then 
 				for i,c in pairs(text) do 
 					getgenv().CurrentTextTxtExe = c
