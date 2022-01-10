@@ -3,7 +3,7 @@ getgenv().TextAmountTxtExe
 
 function txtexe(text,fps,img,loop,loopG,gifexe)
         getgenv().TextAmountTxtExe = #text
-	if type(text) ~= "table" then warn("txtexe | Expected table, got",type(img)) error() end
+	if type(text) ~= "table" then warn("txtexe | Expected table, got",type(text)) error() end
 	if loop then 
 		while loopG do 
 			wait()
@@ -16,7 +16,7 @@ function txtexe(text,fps,img,loop,loopG,gifexe)
 			else 
 				for i,c in pairs(text) do 
 					getgenv().CurrentTextTxtExe = c
-					game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = c,["ImageId"] = getgenv().CurrentImageGifExe } )
+					game:GetService("ReplicatedStorage").CustomiseBooth:FireServer("Update",{["DescriptionText"] = c,["ImageId"] = img } )
 					wait(fps)
 				end
 			end
