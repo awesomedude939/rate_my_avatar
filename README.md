@@ -1,5 +1,3 @@
-# rate_my_avatar
-
 # code example :
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/awesomedude939/rate_my_avatar/main/gifexe", true))()
