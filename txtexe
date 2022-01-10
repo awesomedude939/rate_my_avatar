@@ -1,7 +1,6 @@
 getgenv().CurrentTextTxtExe
 
 function txtexe(text,fps,img,loop,loopG,gifexe)
-        getgenv().TextAmountTxtExe = #text
 	if type(text) ~= "table" then warn("txtexe | Expected table, got",type(text)) error() end
 	if loop then 
 		while loopG do 
