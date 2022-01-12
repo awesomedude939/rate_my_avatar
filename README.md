@@ -1,5 +1,6 @@
 # code example :
 
+```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/awesomedude939/rate_my_avatar/main/main", true))()
 
 spawn(function()
@@ -8,6 +9,7 @@ end)
 spawn(function()
 txtexe({"p1","p2"},1,0,true,true,true)
 end)
+```
 
 # format :
 
