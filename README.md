@@ -1,6 +1,6 @@
 # code example :
 
-## API : 
+## API [ DISCONTINUED ] : 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/awesomedude939/rate_my_avatar/main/main", true))()
 
