@@ -28,4 +28,12 @@ txtexe(texts {table}, interval {number}, image {number}, loop {bool}, loop argum
 
 # Credits :
 
-## awesomedude939 - Scripting
+## All projects
+
+### awesomedude939 - Scripting
+
+## PNG TO ASCII
+
+### jasonbradley - HEX to RGB | https://gist.github.com/jasonbradley/4357406
+### kite - ASCII Characters
+#### Grayscaling - ITU-R BT.601 Formula
