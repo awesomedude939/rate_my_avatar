@@ -1,4 +1,4 @@
-# code example :
+# Code :
 
 ## API [ DISCONTINUED ] : 
 ```lua
@@ -25,3 +25,7 @@ gifexe(images {table}, interval {number}, text {string}, loop {bool}, loop argum
 ``` 
 txtexe(texts {table}, interval {number}, image {number}, loop {bool}, loop arguments {bool}, gifexe {bool} )
 ```
+
+# Credits :
+
+## awesomedude939 - Scripting
