@@ -36,4 +36,5 @@ txtexe(texts {table}, interval {number}, image {number}, loop {bool}, loop argum
 
 ### jasonbradley - HEX to RGB | https://gist.github.com/jasonbradley/4357406
 ### kite - ASCII Characters
+### MaximumADHD (CloneTrooper1019) - PNG Library | https://github.com/MaximumADHD/Roblox-PNG-Library
 #### Grayscaling - ITU-R BT.601 Formula
