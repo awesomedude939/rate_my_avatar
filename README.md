@@ -19,6 +19,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/awesomedude939/rate_m
 
 # format :
 
+```
 gifexe(images {table}, fps {number}, text {string}, loop {bool}, while loop arguments {bool}, txtexe {bool} )
-
+```
+``` 
 txtexe(texts {table}, fps {number}, image {number}, loop {bool}, while loop arguments {bool}, gifexe {bool} )
+```
