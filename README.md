@@ -11,7 +11,7 @@ spawn(function()
 txtexe({"p1","p2"},1,0,true,true,true)
 end)
 ```
-## GUI :
+## GUI [ BEING REWORKED ] :
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/awesomedude939/rate_my_avatar/main/RateMyAvatar-V3.lua"))()
 ```
@@ -32,7 +32,7 @@ txtexe(texts {table}, interval {number}, image {number}, loop {bool}, loop argum
 
 ### awesomedude939 - Scripting
 
-## PNG TO ASCII
+## PNG TO ASCII [ WORK IN PROGRESS ]
 
 ### jasonbradley - HEX to RGB | https://gist.github.com/jasonbradley/4357406
 ### kite - ASCII Characters
