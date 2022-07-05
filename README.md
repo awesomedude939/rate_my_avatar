@@ -11,9 +11,9 @@ spawn(function()
 txtexe({"p1","p2"},1,0,true,true,true)
 end)
 ```
-## GUI [ BEING REWORKED ] :
+## GUI [ VERSION 2.0 BEING MADE ] :
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/awesomedude939/rate_my_avatar/main/RateMyAvatar-V3.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/awesomedude939/rate_my_avatar/main/RateMyAvatarGUI.lua"))()
 ```
 
 
